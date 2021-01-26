@@ -6,16 +6,17 @@ export const data = JSON.parse(`[
         "b":"Naruto",
         "c":"Nobita",
         "d":"Sasuke",
-        "jawab":"a"
+        "kunci":"a"
     },
     {
         "type":"checkbox",
         "soal":"Pilih 2 yang benar mengenai Agil",
         "option":["Trainer Juaracoding","Manusia","Anggota Avengers"],
-        "jawab":["Manusia","Anggota Avengers"]
+        "kunci":["Manusia","Anggota Avengers"]
     },
     {
         "type":"essay",
-        "soal":"Ceritakan pengalaman anda ketika sedang tidur"
+        "soal":"Ceritakan pengalaman anda ketika sedang tidur",
+        "kunci":20
     }
 ]`);    

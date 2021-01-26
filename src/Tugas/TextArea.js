@@ -3,7 +3,17 @@ import React, { Component } from 'react'
 export default class TextArea extends Component {
     constructor(props){
         super(props)
+
+        this.state = {jawaban:""}
     }
+
+    eventHandler = (event)=>{
+        console.log(event)
+        this.setState({jawaban:event.target.value})
+        
+    }
+
+
     render() {
         return (
             <div>

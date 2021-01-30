@@ -10,7 +10,19 @@ export default class RadioButton extends Component {
 
     eventHandler = (event)=>{
         this.setState({jawaban:event.target.value})
+        this.addScore(event.target.value)
     }
+
+    addScore = (jawab)=>{ 
+
+        this.props.funjJawab({
+            soal_no : this.props.no,
+            jawaban : jawab
+        });
+    }
+    
+
+
     render() {
         return (
             <div>

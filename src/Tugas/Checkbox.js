@@ -20,6 +20,7 @@ export default class Checkbox extends Component     {
         let jawab = this.state.jawaban;
         jawab.push(nilai);
         this.setState({jawaban:jawab})
+        this.addScore(jawab)
     }
 
     removeDataJawaban = (nilai)=>{
@@ -27,7 +28,17 @@ export default class Checkbox extends Component     {
             return value !== nilai
         })
         this.setState({jawaban:jawab})
+        this.addScore(jawab)
     }
+
+    addScore = (jawab)=>{ 
+
+        this.props.funjJawab({
+            soal_no : this.props.no,
+            jawaban : jawab
+        });
+    }
+    
 
 
 
